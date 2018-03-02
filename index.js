@@ -22,7 +22,7 @@ import Header from './src/components/Header';
 
 // Create a component (Sec. 5, Lec. 18)
 const App = () => (	
-	<Header />
+	<Header headerText={'Albums'} />
 );
 
 // Render component to the device (Sec. 5, Lec. 19)

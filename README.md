@@ -7,13 +7,13 @@ Video reference: Stephen Grider, React Native
 
 ## Build Commands
 
--- Build the initial project called `albums` (Sec. 2, Lec. 5)
+- Build the initial project called `albums` (Sec. 2, Lec. 5)
 
     ```
         $ react-native init albums
     ```
 
--- Build project and launch iOS simulator (Sec. 2, Lec. 6)
+- Build project and launch iOS simulator (Sec. 2, Lec. 6)
 
     ```
         $ react-native run-ios
