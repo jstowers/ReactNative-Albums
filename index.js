@@ -17,12 +17,16 @@
 // React Native - knows how to take the output from a component
 // and place it on the mobile screen; provides default primitve components (image, text)
 import React from 'react';
-import { AppRegistry, Text } from 'react-native';
+import { AppRegistry, View } from 'react-native';
 import Header from './src/components/Header';
+import HeaderBand from './src/components/HeaderBand';
 
 // Create a component (Sec. 5, Lec. 18)
-const App = () => (	
-	<Header headerText={'Albums'} />
+const App = () => (
+	<View>
+		<Header headerText={'Albums'} />
+		<HeaderBand />
+	</View>
 );
 
 // Render component to the device (Sec. 5, Lec. 19)

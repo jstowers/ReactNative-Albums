@@ -3,17 +3,18 @@ A React Native mobile app designed to improve your Spanish vocab.
 ---
 
 Start date:  Wednesday, February 28, 2018
-Video reference: Stephen Grider, React Native
+
+Video reference: Stephen Grider, The Complete React Native and Redux Course
 
 ## Build Commands
 
-- Build the initial project called `albums` (Sec. 2, Lec. 5)
+- Initialize a new React Native project called _albums_ (Sec. 2, Lec. 5)
 
     ```
         $ react-native init albums
     ```
 
-- Build project and launch iOS simulator (Sec. 2, Lec. 6)
+- Build the project and launch iOS simulator (Sec. 2, Lec. 6)
 
     ```
         $ react-native run-ios
@@ -63,19 +64,38 @@ Video reference: Stephen Grider, React Native
 ## Styling with React Native
 Sec. 6, Lecs. 24, 25
 
-Most of styling in React Native is done by hand.  Very few open-source styling libraries available.
+Most styling in React Native is done by hand.  Very few open-source styling libraries available.
 
-1.  Inside a component, create a styles object:
+1.  Inside a component, create a _styles_ object:
 
-    ```
+    ```javascript
         const styles = {
+            viewStyle: {
+                backgroundColor: '#F8F8F8',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: 60,
+                paddingTop: 15,
+            }
             textStyle: {
                 fontSize: 20,
-                color: 'red',
+                color: 'black',
             }
         };
     ```
 
-2.  Reference the different styles properties
+2.  The _styles_ object has different properties like _viewStyle_ and _textStyle_.  Use these properties to style different primitive elements within a component:
+    
+    ```javascript
+        const Header = (props) => {
+            const { textStyle, viewStyle } = styles;
 
-3.  Use the `<View />` primitive element for positionining and styling of different aspects of a component.  (Sec. 6, Lec. 26)
+            return (
+                <View style={viewStyle}>
+                    <Text style={textStyle}>{ props.headerText }</Text>
+                </View> 
+            );
+        };
+    ```
+
+3.  Use the _<View />_ primitive element for positionining and styling of different elements of a component.  (Sec. 6, Lec. 26)
