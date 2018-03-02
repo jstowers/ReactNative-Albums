@@ -1,10 +1,12 @@
 # Spanish Vocabulary Builder
+---
+
 A React Native mobile app designed to improve your Spanish vocab.
 ---
 
 Start date:  Wednesday, February 28, 2018
 
-Video reference: Stephen Grider, The Complete React Native and Redux Course
+Video reference: Grider, Stephen: _The Complete React Native and Redux Course_
 
 ## Build Commands
 
@@ -62,7 +64,7 @@ Video reference: Stephen Grider, The Complete React Native and Redux Course
 
 
 ## Styling with React Native
-Sec. 6, Lecs. 24, 25
+Sec. 6, Lecs. 24-28
 
 Most styling in React Native is done by hand.  Very few open-source styling libraries available.
 
