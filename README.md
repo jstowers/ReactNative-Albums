@@ -68,7 +68,7 @@ Sec. 6, Lecs. 24-28
 
 Most styling in React Native is done by hand.  Very few open-source styling libraries available.
 
-1.  Inside a component, create a _styles_ object:
+1.  Inside a component, create a _styles_ object.  And within the _styles_ object, you can define different properties like _viewStyle_ and _textStyle_:
 
     ```javascript
         const styles = {
@@ -86,7 +86,7 @@ Most styling in React Native is done by hand.  Very few open-source styling libr
         };
     ```
 
-2.  The _styles_ object has different properties like _viewStyle_ and _textStyle_.  Use these properties to style different primitive elements within a component:
+2.  Use these properties to style different primitive elements within the component:
     
     ```javascript
         const Header = (props) => {
