@@ -76,7 +76,7 @@ Most styling in React Native is done by hand.  Very few open-source styling libr
                 alignItems: 'center',
                 height: 60,
                 paddingTop: 15,
-            }
+            },
             textStyle: {
                 fontSize: 20,
                 color: 'black',
