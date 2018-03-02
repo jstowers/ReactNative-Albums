@@ -88,7 +88,7 @@ Most styling in React Native is done by hand.  Very few open-source styling libr
     
     ```javascript
         const Header = (props) => {
-            const { textStyle, viewStyle } = styles;
+            const { viewStyle, textStyle } = styles;
 
             return (
                 <View style={viewStyle}>
@@ -98,4 +98,4 @@ Most styling in React Native is done by hand.  Very few open-source styling libr
         };
     ```
 
-3.  Use the _<View />_ primitive element for positionining and styling of different elements of a component.  (Sec. 6, Lec. 26)
+3.  Use the `<View />` primitive element for positionining and styling of different elements of a component.  (Sec. 6, Lec. 26)
