@@ -1,10 +1,10 @@
 # Spanish Vocabulary Builder
 
-A React Native mobile app designed to improve your Spanish vocab.
+## A React Native mobile app designed to improve your Spanish vocab.
 
-Start date:         Wednesday, February 28, 2018
+Start date  =>      Wednesday, February 28, 2018
 
-Video reference:    Grider, Stephen: _The Complete React Native and Redux Course_
+Video reference =>  Grider, Stephen: _The Complete React Native and Redux Course_
 
 ---
 
