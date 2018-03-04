@@ -35,16 +35,28 @@ class AlbumList extends Component {
 	render() {
 		const { albums } = this.state;
 
+		const styles = {
+			containerStyle: {
+				backgroundColor: '#F8F8F8',
+				marginTop: 30
+			},
+			textStyle: {
+				color: 'steelblue',
+				fontSize: 16,
+				textAlign: 'center'
+			}
+		};
+
 		if (albums.length > 0) { 
 			return (
-				<View>
+				<View style={styles.containerStyle}>
 					{ this.displayAlbums(albums) }
 				</View>
 			);
 		}
 		return (
-			<View>
-				<Text>Loading Albums</Text>
+			<View style={styles.containerStyle}>
+				<Text style={styles.textStyle}>Loading Albums</Text>
 			</View>
 		);
 	}

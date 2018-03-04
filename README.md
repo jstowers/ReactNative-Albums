@@ -136,6 +136,28 @@ Sec. 7, Lec. 31
     + Easier to write larger, more organized components
     + More complex, but more capability
 
+- Rendering Child Components
+(Sec. 7, Lecs. 41-42)
 
+If we pass a `<Text />` component to its parent `<Card />` component, the `<Text/>` component will pass as a child.  
 
+    ```jsx
+        // AlbumDetail component
+        return (
+            <Card>  
+                <Text>{ album.title }</Text>
+            </Card>
+        )
+    ```
+
+Then, to render the child within the parent `<Card />` component, you must reference `props.children`:
+
+    ```javascript
+        // Card component
+        return (
+            <View style={styles.cardStyle}>
+                { props.children }
+            </View>
+        );
+    ```
 
