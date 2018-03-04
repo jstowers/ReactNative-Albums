@@ -106,18 +106,20 @@ Most styling in React Native is done by hand.  Very few open-source styling libr
 
 ### Sunday, March 4, 2018
 
-# Overview
-Sec. 7 - Create AlbumList and AlbumDetail components
+## Overview
+Sec. 7 - 
 
-_AlbumList_ component will: (1) fetch a list of albums from an API endpoint, and (2) render several AlbumDetail components.
+In this section, you will create two components, AlbumList and AlbumDetail:
 
-_AlbumDetail_ component will display an album card for an individual album.  The album card will include the artist name, album name, and album cover.
+_AlbumList_: (1) fetches a list of albums from an API endpoint, and (2) renders several AlbumDetail components.
 
-# Functional vs Class Components"
+_AlbumDetail_: displays a card for an album.  Card details include the artist name, album name, and album cover.
+
+## Functional vs Class Components
 Sec. 7, Lec. 31
 
 - Functional Component
-    + In React, data goes in, some kind of JSX comes out
+    + In React, a functional component simply means that data goes in and some kind of JSX comes out
     + Typically used for presenting static data (ex. Header component)
     + Cannot handle fetching data
     + Easy to write
