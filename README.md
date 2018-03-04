@@ -139,9 +139,11 @@ Sec. 7, Lec. 31
 ## Rendering Child Components
 (Sec. 7, Lecs. 41-42)
 
-If we pass a `<Text />` component to its parent `<Card />` component, the `<Text/>` component will pass as part of of props.children.  
+We can pass a child component up to its parent as a property called _props.children_.
 
-    ```jsx
+By its nested nature, a `<Text />` component is passed up to its parent `<Card />` component: 
+
+    ```javascript
         // AlbumDetail component
         return (
             <Card>  
@@ -150,7 +152,7 @@ If we pass a `<Text />` component to its parent `<Card />` component, the `<Text
         )
     ```
 
-Then, to render the child within the parent `<Card />` component, you only need reference `props.children`:
+To render the child within the parent `<Card />` component, you only need reference `props.children`:
 
     ```javascript
         // Card component
