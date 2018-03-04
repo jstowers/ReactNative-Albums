@@ -101,3 +101,39 @@ Most styling in React Native is done by hand.  Very few open-source styling libr
     ```
 
 3.  Use the `<View />` primitive element for positionining and styling of elements nested within, like the `<Text />` element above.  (Sec. 6, Lec. 26)
+
+---
+
+### Sunday, March 4, 2018
+
+# Overview
+Sec. 7 - Create AlbumList and AlbumDetail components
+
+_AlbumList_ component will: (1) fetch a list of albums from an API endpoint, and (2) render several AlbumDetail components.
+
+_AlbumDetail_ component will display an album card for an individual album.  The album card will include the artist name, album name, and album cover.
+
+# Functional vs Class Components"
+Sec. 7, Lec. 31
+
+- Functional Component
+    + In React, data goes in, some kind of JSX comes out
+    + Typically used for presenting static data (ex. Header component)
+    + Cannot handle fetching data
+    + Easy to write
+
+    ```javascript
+        const Header = () => {
+            return <Text>Hi there</Text>
+        }
+    ```
+
+- Class Component
+    + Used for dynamics sources of data
+    + Handles any data that might change, fetching data, user events, etc.
+    + Easier to write larger, more organized components
+    + More complex, but more capability
+
+
+
+

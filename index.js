@@ -1,3 +1,4 @@
+// App Entry Point
 // Thursday, March 1, 2018
 // Sec. 5, Lec. 16
 
@@ -20,12 +21,14 @@ import React from 'react';
 import { AppRegistry, View } from 'react-native';
 import Header from './src/components/Header';
 import HeaderBand from './src/components/HeaderBand';
+import AlbumList from './src/components/AlbumList';
 
 // Create a component (Sec. 5, Lec. 18)
 const App = () => (
 	<View>
 		<Header headerText={'Albums'} />
 		<HeaderBand />
+		<AlbumList />
 	</View>
 );
 
