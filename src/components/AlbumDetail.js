@@ -6,6 +6,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 import Card from './Card';
+import CardSection from './CardSection';
 
 const AlbumDetail = (props) => {
 
@@ -13,9 +14,11 @@ const AlbumDetail = (props) => {
 
 	return (
 		<Card>	
-			<Text>{ album.title }</Text>
+			<CardSection>
+				<Text>{props.album.title}</Text>
+			</CardSection>
 		</Card>
-	)
-}
+	);
+};
 
 export default AlbumDetail;

@@ -126,8 +126,7 @@ Sec. 7, Lec. 31
 
     ```javascript
         const Header = () => {
-            return <Text>Hi there</Text>
-        }
+            return <Text>Hi there
     ```
 
 - Class Component
@@ -156,10 +155,12 @@ To render the child within the parent `<Card />` component, you only need refere
 
     ```javascript
         // Card component
-        return (
-            <View style={styles.cardStyle}>
-                { props.children }
-            </View>
-        );
+        const Card = (props) => {
+            return (
+                <View style={styles.cardStyle}>
+                    { props.children }
+                </View>
+            );
+        }
     ```
 
