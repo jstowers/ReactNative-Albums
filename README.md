@@ -141,7 +141,7 @@ Sec. 7, Lec. 31
 
 We can pass a child component up to its parent as a property called _props.children_.
 
-By its nested nature, a `<Text />` component is passed up to its parent `<Card />` component: 
+By its nested nature, a _Text_ component is passed up to its parent _Card_component: 
 
     ```javascript
         // AlbumDetail component
@@ -152,7 +152,7 @@ By its nested nature, a `<Text />` component is passed up to its parent `<Card /
         );
     ```
 
-To render the child within the parent `<Card />` component, you only need reference `props.children`:
+To render the child within the parent _Card_ component, you only need reference _props.children_:
 
     ```javascript
         // Card component
