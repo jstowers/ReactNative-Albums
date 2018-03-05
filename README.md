@@ -127,6 +127,7 @@ Sec. 7, Lec. 31
     ```javascript
         const Header = () => {
             return <Text>Hi there
+        };
     ```
 
 - Class Component
@@ -148,7 +149,7 @@ By its nested nature, a `<Text />` component is passed up to its parent `<Card /
             <Card>  
                 <Text>{ album.title }</Text>
             </Card>
-        )
+        );
     ```
 
 To render the child within the parent `<Card />` component, you only need reference `props.children`:
@@ -161,6 +162,6 @@ To render the child within the parent `<Card />` component, you only need refere
                     { props.children }
                 </View>
             );
-        }
+        };
     ```
 
