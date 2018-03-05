@@ -37,7 +37,7 @@ class AlbumList extends Component {
 
 		const styles = {
 			containerStyle: {
-				backgroundColor: '#F8F8F8',
+				backgroundColor: '#fff',
 				marginTop: 30
 			},
 			textStyle: {

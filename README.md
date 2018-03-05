@@ -135,6 +135,10 @@ Sec. 7, Lec. 31
     + Handles any data that might change, fetching data, user events, etc.
     + Easier to write larger, more organized components
     + More complex, but more capability
+--
+
+Sunday, March 4, 2018
+
 
 ## Rendering Child Components
 (Sec. 7, Lecs. 41-42)
@@ -182,7 +186,7 @@ Sec. 8, Lec. 43
 
 - By default, React Native places all elements in the upper lefthand corner of a container.
 
-- #justifyContent# moves elements within a container:
+- **justifyContent** moves elements within a container:
     + 'flex-end' => bottom left corner
     + 'center' => centers elements 
     + 'space-between' => maximizes and equalizes the space between items in a container
@@ -191,8 +195,15 @@ Sec. 8, Lec. 43
 ## Positioning Elements on Mobile
 Sec. 8, Lec. 44
 
- - #flexDirection#
-    The #justifyContent# property can be applied in either rows or columns by setting the #flexDirection# property.
+ - **flexDirection**
+    The _justifyContent_ property can be applied in either rows or columns by setting the _flexDirection_ property.
     The default flexDirection is 'column'
     + 'row' => 'justifyContent'
-    + ''  
+    + 'column'
+
+## Images with React Native
+Sec. 9, Lec. 46
+
+React Native provides an `<Image />` primitive
+
+
