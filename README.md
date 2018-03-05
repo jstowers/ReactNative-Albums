@@ -196,6 +196,7 @@ Sec. 8, Lec. 43
 Sec. 8, Lec. 44
 
  - **flexDirection**
+
     The _justifyContent_ property can be applied in either rows or columns by setting the _flexDirection_ property.
     The default flexDirection is 'column'
     + 'row' => 'justifyContent'
@@ -207,3 +208,33 @@ Sec. 9, Lec. 46
 React Native provides an `<Image />` primitive
 
 
+## Making Content Scrollable
+Sec. 9, Lec. 48
+
+- By default, React Native does not scroll up/down.
+
+- Two steps to enable scrolling:
+
+    + Identify the content you expect to be scrollable
+    + Import ScrollView, a React Native container to wrap around the scrollable content.
+
+- In this app, the AlbumList component holds the scrollable content.
+
+    + Import the native ScrollView container
+
+    + Replace the `<View />` with `<ScrollView />`
+    
+    ```javascript
+        // AlbumList
+        import { View, Text, ScrollView } from 'react-native';
+
+        if (albums.length > 0) { 
+            return (
+                <ScrollView style={styles.containerStyle}>
+                    { this.displayAlbums(albums) }
+                </ScrollView>
+            );
+        };
+    ```
+
+- 

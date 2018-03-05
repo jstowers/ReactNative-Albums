@@ -9,7 +9,7 @@
 */
 
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
@@ -49,9 +49,9 @@ class AlbumList extends Component {
 
 		if (albums.length > 0) { 
 			return (
-				<View style={styles.containerStyle}>
+				<ScrollView style={styles.containerStyle}>
 					{ this.displayAlbums(albums) }
-				</View>
+				</ScrollView>
 			);
 		}
 		return (
