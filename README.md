@@ -141,7 +141,7 @@ Sec. 7, Lec. 31
 
 - We can pass a child component up to its parent as a property called _props.children_.
 
-- By its nested nature, a _Text_ component is passed up to its parent _Card_ component:
+- By its nested nature, a `<Text />` component is passed up to its parent `<Card />` component:
 
     ```javascript
         // AlbumDetail component
@@ -152,7 +152,7 @@ Sec. 7, Lec. 31
         );
     ```
 
-- To render the child within the parent _Card_ component, you only need reference _props.children_:
+- To render the child `<AlbumDetail />` within the parent _Card_ component, you only need reference _props.children_:
     
     ```javascript
         // Card component
@@ -165,3 +165,34 @@ Sec. 7, Lec. 31
         };
     ```
 
+## Mastering Layout with Flexbox
+Sec. 8, Lec. 43
+
+- Build `<CardSection />` component for the artist info:
+
+    ```javascript
+        <CardSection>
+            <Image />
+            <Text />
+            <Text />
+        </CardSection>
+    ```
+
+- Flexbox used to layout multiple items in a container
+
+- By default, React Native places all elements in the upper lefthand corner of a container.
+
+- #justifyContent# moves elements within a container:
+    + 'flex-end' => bottom left corner
+    + 'center' => centers elements 
+    + 'space-between' => maximizes and equalizes the space between items in a container
+    + 'space-around' => equalizes space around elements
+
+## Positioning Elements on Mobile
+Sec. 8, Lec. 44
+
+ - #flexDirection#
+    The #justifyContent# property can be applied in either rows or columns by setting the #flexDirection# property.
+    The default flexDirection is 'column'
+    + 'row' => 'justifyContent'
+    + ''  
