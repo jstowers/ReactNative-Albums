@@ -139,9 +139,9 @@ Sec. 7, Lec. 31
 ## Rendering Child Components
 (Sec. 7, Lecs. 41-42)
 
-We can pass a child component up to its parent as a property called _props.children_.
+- We can pass a child component up to its parent as a property called _props.children_.
 
-By its nested nature, a _Text_ component is passed up to its parent _Card_ component:
+- By its nested nature, a _Text_ component is passed up to its parent _Card_ component:
 
     ```javascript
         // AlbumDetail component
@@ -152,7 +152,7 @@ By its nested nature, a _Text_ component is passed up to its parent _Card_ compo
         );
     ```
 
-To render the child within the parent _Card_ component, you only need reference _props.children_:
+- To render the child within the parent _Card_ component, you only need reference _props.children_:
     
     ```javascript
         // Card component
