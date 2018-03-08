@@ -4,7 +4,7 @@
 // Purpose: display card for a single album
 
 import React from 'react';
-import { Image, Text, View } from 'react-native';
+import { Image, Text, View, Linking } from 'react-native';
 import Button from './Button';
 import Card from './Card';
 import CardSection from './CardSection';
@@ -55,7 +55,10 @@ const AlbumDetail = (props) => {
 			</CardSection>
 
 			<CardSection>
-				<Button url={url} />
+				<Button
+					onPress={() => Linking.openURL(url)}>
+					Buy Now
+				</Button>
 			</CardSection>
 		</Card>
 	);
