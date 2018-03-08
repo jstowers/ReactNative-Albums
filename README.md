@@ -22,6 +22,12 @@ Video reference =>  Grider, Stephen: _The Complete React Native and Redux Course
         $ react-native run-ios
     ```
 
+- Load the Chrome tools debugger.  In a new Chrome tab, enter the following address:
+
+    ```
+        http://localhost:8081/debugger-ui/
+    ```
+
 ## Add ESLint With Sublime Text 3
 
 1.  Install ESLint globally with NPM
