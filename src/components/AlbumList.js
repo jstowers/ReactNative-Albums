@@ -9,7 +9,7 @@
 */
 
 import React, { Component } from 'react';
-import { View, Text, ScrollView } from 'react-native';
+import { Text, ScrollView } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
@@ -55,9 +55,9 @@ class AlbumList extends Component {
 			);
 		}
 		return (
-			<View style={styles.containerStyle}>
+			<ScrollView style={styles.containerStyle}>
 				<Text style={styles.textStyle}>Loading Albums</Text>
-			</View>
+			</ScrollView>
 		);
 	}
 }

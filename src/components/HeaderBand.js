@@ -7,7 +7,7 @@ const HeaderBand = () => {
 	const { viewStyle } = styles;
 
 	return (
-		<View style={{ flex: 2, flexDirection: 'column' }}>
+		<View>
 			<View style={viewStyle} backgroundColor='powderblue' />
 			<View style={viewStyle} backgroundColor='skyblue' />
 			<View style={viewStyle} backgroundColor='steelblue' />

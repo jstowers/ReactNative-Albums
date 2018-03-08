@@ -223,7 +223,7 @@ Sec. 9, Lec. 48
     + Import the native ScrollView container
 
     + Replace the `<View />` with `<ScrollView />`
-    
+
     ```javascript
         // AlbumList
         import { View, Text, ScrollView } from 'react-native';
@@ -237,4 +237,17 @@ Sec. 9, Lec. 48
         };
     ```
 
-- 
+-  To ensure that scrollable content works properly, you must add a flex property of 1 to the root View component:
+
+    ```javascript
+        // index.js
+        const App = () => (
+            <View style={{ flex: 1 }}>
+                <Header headerText={'Albums'} />
+                <HeaderBand />
+                <AlbumList />
+            </View>
+        );  
+    ```
+
+- UPDATE: I removed the flex: 1 property and was able to scroll up and down in the simulator.  You need to press down on the trackpad with one finger and scroll up/down with another finger.

@@ -5,16 +5,20 @@
 
 import React from 'react';
 import { Image, Text, View } from 'react-native';
+import Button from './Button';
 import Card from './Card';
 import CardSection from './CardSection';
 
 const AlbumDetail = (props) => {
 
+	console.log('props =', props);
+
 	const { 
 		title, 
 		artist, 
 		image, 
-		thumbnail_image 
+		thumbnail_image,
+		url,
 	} = props.album;
 
 	const { 
@@ -26,7 +30,8 @@ const AlbumDetail = (props) => {
 	} = styles;
 
 	return (
-		<Card>	
+
+		<Card>
 			<CardSection>
 				<View style={thumbnailContainerStyle}>
 					<Image
@@ -41,11 +46,16 @@ const AlbumDetail = (props) => {
 					<Text>{artist}</Text>
 				</View>
 			</CardSection>
+
 			<CardSection>
 				<Image
 					style={imageStyle}
 					source={{ uri: image }}
 				/>
+			</CardSection>
+
+			<CardSection>
+				<Button url={url} />
 			</CardSection>
 		</Card>
 	);
